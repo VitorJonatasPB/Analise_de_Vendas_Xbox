@@ -48,4 +48,5 @@ Para garantir que o Dashboard tenha o padrão visual do Xbox, utilize rigorosame
 ## 🛠️ Ferramentas e Técnicas
 * **Microsoft Excel**: Tabelas Dinâmicas, funções de agregação (SOMASE/SUMIF) e gráficos.
 
+## Projeto desenvolvido por Vitor Jônatas Paiva Barbosa.
 
