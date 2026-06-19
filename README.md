@@ -15,10 +15,10 @@ Os dados brutos estão estruturados na base principal e contêm informações de
 
 ## ❓ Perguntas Estratégicas Respondidas
 Com base nas análises e na aba de **Cálculos**, o projeto responde a importantes perguntas de negócios:
-1. **Faturamento Geral**: Qual é o faturamento total agregado de todas as vendas de assinaturas? *(Ex: R$ 7.633,00 registrados na base de cálculos)*.
+1. **Faturamento Geral**: Qual é o faturamento total agregado de todas as vendas de assinaturas?
 2. **Retenção (Auto Renovação)**: Qual é o faturamento total de vendas de planos anuais, separados por usuários que optaram ou não pela auto renovação?
 3. **Adoção de Serviços Adicionais**: Quantos assinantes adquiriram o *EA Play Season Pass* ou o *Minecraft Season Pass*, e qual foi a receita total gerada exclusivamente por esses complementos?
-4. **Impacto de Promoções**: Sabendo que o impacto total de cupons promocionais foi de R$ 2.122,00, qual foi o plano (Ultimate, Standard ou Core) que mais se beneficiou financeiramente desses descontos?
+4. **Impacto de Promoções**: Qual foi o total de cupons promocionais, qual foi o plano (Ultimate, Standard ou Core) que mais se beneficiou financeiramente desses descontos?
 
 ## 📊 Instruções para Reprodução do Dashboard
 
@@ -28,7 +28,7 @@ Para reproduzir o painel de indicadores interativo (Dashboard) seguindo as diret
 Utilize a aba `Bases` no Excel (ou ferramentas SQL/BI) para criar os agrupamentos necessários que alimentarão os gráficos:
 * **Faturamento**: Crie uma Tabela Dinâmica somando a coluna `Total Value`.
 * **Análise de Cupons**: Crie uma Tabela Dinâmica arrastando o campo `Plan` para Linhas e `Coupon Value` para Valores (certificando-se de que está configurado como **Soma**).
-* **Add-ons**: Cruce a contagem dos campos de `EA Play` e `Minecraft` pelos tipos de planos (`Plan`).
+* **Add-ons**: Cruze a contagem dos campos de `EA Play` e `Minecraft` pelos tipos de planos (`Plan`).
 
 ### 2. Aplicação da Identidade Visual (Assets)
 Para garantir que o Dashboard tenha o padrão visual do Xbox, utilize rigorosamente a paleta de cores mapeada na aba `Assets`:
@@ -42,9 +42,10 @@ Para garantir que o Dashboard tenha o padrão visual do Xbox, utilize rigorosame
 3. **Indicadores (Cards)**: Adicione cartões numéricos em destaque mostrando o *Faturamento Total* e o *Total de Descontos Concedidos*.
 4. **Gráficos Recomendados**:
    * *Gráfico de Colunas/Barras*: Para mostrar o faturamento por tipo de plano (Core vs Standard vs Ultimate).
-   * *Gráfico de Rosca/Pizza*: Para visualizar a proporção de renovações automáticas (Yes vs No).
-   * *Gráfico de Barras Horizontais*: Para evidenciar qual plano mais se beneficiou (maior volume) dos cupons promocionais.
+   * *Gráfico de Rosca/Pizza*: Para visualizar qual plano mais se beneficiou.
+   * *Gráfico de Barras Horizontais*: Para evidenciar qual plano tem mais volume se autorenovável ou não.
 
 ## 🛠️ Ferramentas e Técnicas
 * **Microsoft Excel**: Tabelas Dinâmicas, funções de agregação (SOMASE/SUMIF) e gráficos.
-* **SQL**: Consultas de agregação (`GROUP BY`) para validação de dados em bancos relacionais.
+
+
